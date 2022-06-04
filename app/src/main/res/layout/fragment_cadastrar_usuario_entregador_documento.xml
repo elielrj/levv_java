@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue400_app_levv"
+    tools:context=".view.cadastro.usuario.transportador.CadastrarUsuarioEntregadorDocumentoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.beardedhen.androidbootstrap.BootstrapEditText
+                        android:id="@+id/tela_fragment_cadastro_entregador_doc_nr_edit"
+                        style="8sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="48dp"
+                        android:autofillHints="number"
+                        android:ems="10"
+                        android:hint="@string/documento_identificacao"
+                        android:inputType="number"
+                        android:maxLength="13"
+                        android:minWidth="@dimen/text_margin"
+                        android:minHeight="70dp"
+                        android:textSize="16sp"
+                        app:bootstrapBrand="info"
+                        app:bootstrapSize="xl"
+                        app:roundedCorners="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Meio de Transporte"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_meio_transporte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/tela_fragment_cadastro_entregador_meioTransp_pe_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="@string/a_pe" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="@string/moto" />
+
+                        <RadioButton
+                            android:id="@+id/tela_fragment_cadastro_entregador_meioTransp_carro_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="@string/carro" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewIdt"
+                    android:layout_width="160dp"
+                    android:layout_height="210dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@color/blue200_app_levv" />
+
+                <Button
+                    android:id="@+id/tela_fragment_cadastro_entregador_doc_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:drawableLeft="@drawable/icon_drawable_camera"
+                    android:text="@string/identidade"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

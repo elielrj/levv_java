@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue400_app_levv"
+    android:orientation="vertical"
+    tools:context=".view.pedido.enviar.TelaProdutoEnviarActivity">
+
+    <com.example.levv.support.LockableScrollView
+        android:id="@+id/svEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        tools:ignore="InnerclassSeparator">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="PEDIDO"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- 3 = Qtd + Peso + MeioTransp  -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+
+                <!-- Text + Sppiner = PESO-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_drawable_amount"
+                        android:gravity="center"
+                        android:text="QUANTIDADE"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spQuantidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:minWidth="10dp"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_drawable_weight"
+                        android:gravity="center"
+                        android:text="PESO"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spPeso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:minWidth="40dp"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- VOLUME -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="VOLUME"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_medium_volume" />
+
+                    <RadioButton
+                        android:id="@+id/rbVolumePequeno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="20 x 20 x 20"
+                        android:text="Pequeno" />
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_medium_volume" />
+
+                    <RadioButton
+                        android:id="@+id/rbVolumeMedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="40 x 40 x 40"
+                        android:text="Médio" />
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_medium_volume" />
+
+                    <RadioButton
+                        android:id="@+id/rbVolumeGrande"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="60 x 60 x 60"
+                        android:text="Grande" />
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="20 x 20 x 20"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="40 x 40 x 40"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="60 x 60 x 60"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Meio Transp -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="MEIO DE TRANSPORTE"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/spMeioDeTransporte"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minWidth="20dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="ROTA"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <!-- End + Btn + btn + fragment -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- lenear do input + button -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:orientation="horizontal">
+
+                    <!-- lenear do input -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="19"
+                        android:orientation="vertical">
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompletarColeta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_button"
+                            android:ems="10"
+                            android:hint="Endereço da coleta"
+                            android:inputType="text"
+                            android:maxLength="200"
+                            android:minHeight="55dp"
+                            android:minEms="3"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgLocalizarColeta"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/icon_drawable_to_locate" />
+
+                        <ImageView
+                            android:id="@+id/imgLocalizarColetaNoMapa"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/icon_drawable_map" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flLocalizarNoMapaColeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- End + Btn + btn + fragment -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- lenear do input + button -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:orientation="horizontal">
+
+                    <!-- lenear do input -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="19"
+                        android:orientation="vertical">
+
+                        <!--
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <AutoCompleteTextView
+                                android:id="@+id/editEntrega"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:autofillHints="name"
+                                android:ems="10"
+                                android:hint="Endereço da entrega"
+                                android:inputType="text"
+                                android:maxLength="200"
+                                android:minHeight="70dp"
+                                android:minEms="3"
+                                android:textSize="16sp"
+                                app:bootstrapBrand="info"
+                                app:bootstrapSize="xl"
+                                app:roundedCorners="true" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        -->
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompletarEntrega"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:autofillHints="name"
+                            android:background="@drawable/rounded_button"
+                            android:ems="10"
+                            android:hint="Endereço da entrega"
+                            android:inputType="text"
+                            android:maxLength="200"
+                            android:minHeight="55dp"
+                            android:minEms="3"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgLocalizarEntrega"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/icon_drawable_to_locate" />
+
+                        <ImageView
+                            android:id="@+id/imgLocalizarEntregaNoMapa"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            app:srcCompat="@drawable/icon_drawable_map" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flLocalizarNoMapaEntrega"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="VALOR SUGERIDO"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <!-- lenear do input -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.beardedhen.androidbootstrap.BootstrapEditText
+                                android:id="@+id/edtValorEstimado"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autofillHints="name"
+                                android:ems="10"
+                                android:hint="Valor negociado"
+                                android:inputType="numberDecimal"
+                                android:maxLength="100"
+                                android:minHeight="55dp"
+                                android:minEms="3"
+                                android:textAlignment="center"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                app:bootstrapBrand="info"
+                                app:bootstrapSize="xl"
+                                app:roundedCorners="true" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnCalcular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:drawableLeft="@drawable/icon_drawable_total_amount"
+                        android:text="R$"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnEnviarPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:background="@drawable/rounded_button"
+                    android:drawableLeft="@drawable/icon_drawable_register"
+                    android:text="ENVIAR PEDIDO"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/white" />
+
+                <Button
+                    android:id="@+id/btnLimpar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:drawableLeft="@drawable/icon_drawable_trash"
+                    app:backgroundTint="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.example.levv.support.LockableScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

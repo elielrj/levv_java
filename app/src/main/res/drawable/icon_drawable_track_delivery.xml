@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/half_overlay"
+        android:drawable="@drawable/icon_track_delivery"
+        android:width="40dp"
+        android:end="8dp"
+        android:height="40dp"
+        />
+
+</layer-list>

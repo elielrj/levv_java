@@ -1,0 +1,152 @@
+<resources>
+
+    <string name="app_name">Levv</string>
+    <string name="app_versao">Versão 1.0</string>
+    <string name="btn_cadastrar">CADASTRAR</string>
+
+    //TELA CADASTRO
+
+    //CADASTRO TRANSPORTADOR
+
+    <!-- BOTÃO -->
+    <string name="botao_enviar_produto">Enviar produto</string>
+    <string name="botao_acompanhar_entrega">Acompanhar entrega</string>
+    <string name="botao_entregar_produto">Entregar produto</string>
+    <!-- DESCRICAO DO BOTAO -->
+    <string name="botao_enviar_produto_descricao">Envie e receba seus produtos</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+    <!-- TELA CADASTRO DETALHADO -->
+
+    <string name="tela_cadastro_cpf_edit">CPF</string>
+    <string name="tela_cadastro_data_nascimento_edit">dd/mm/aaaa</string>
+    <string name="tela_cadastro_email_edit">Email</string>
+    <string name="tela_cadastro_logradouro">Logradouro</string>
+
+    <string name="complemento">Complemento</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+
+    <!-- TELA CADASTRO DETALHADO -->
+
+
+    <!-- TELA ACOMPANHAR ENTREGA - LISTA -->
+
+    <!-- TELA ENTREGAR PRODUTO - LISTA DE ENTREGAS DISPONÍVEIS -->
+    <string name="nome">Nome</string>
+    <string name="numero_celular">Celular com ddd</string>
+    <string name="app_logo_descricao">Levv - Leve, Envie e Receba seus itens de pequeno porte!</string>
+    <string name="documento_identificacao">Nr Documento identificação</string>
+
+    <string name="numero">Número</string>
+    <string name="identidade">Idt</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="placa">Placa</string>
+    <string name="crlv">CRLV</string>
+    <string name="cliente">Cliente</string>
+    <string name="tela_entregar_produto_descricao">Entregar produto</string>
+    <string name="tela_enviar_produto_descricao">Enviar produto</string>
+    <string name="tela_acompanhar_entrega_descricao2">Acompanhar entrega</string>
+    <string name="localizar">LOCALIZAR</string>
+    <string name="usurio">USUÁRIO: </string>
+    <string name="lojista">Lojista</string>
+    <string name="selecionar">SELECIONAR</string>
+    <string name="limpar">Limpar</string>
+    <string name="acompanhar">Acompanhar</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="renavam">Renavam</string>
+    <string name="cep">CEP</string>
+
+    <string name="tela_nome_acompanhar_pedido">Acompanhar pedido</string>
+    <string name="tela_nome_cadastrar_endereco">Cadastrar endereço</string>
+    <string name="tela_nome_cadastrar_usuario">Cadastro de Usuário</string>
+    <string name="tela_nome_entregar_pedido">Entregar produto</string>
+    <string name="tela_nome_acompanhar_entrega_pedido">Acompanhar localização do pedido</string>
+    <string name="tela_nome_enviar_pedido">Enviar produto</string>
+    <string name="tela_nome_cadastrar_celular">Cadastro de celular</string>
+    <string name="transpotador">Transportador</string>
+    <string name="pedido_adapter_aceitar">Aceitar</string>
+    <string name="pedido_adapter_continuar">Continuar</string>
+    <string name="pedido_adapter_visualizar">Visualizar</string>
+
+
+    <string-array name="descricao_do_item">
+        <item>Tênis</item>
+        <item>Vestuário</item>
+        <item>Acessório</item>
+        <item>Sapato</item>
+        <item>Relógio</item>
+        <item>Roupas</item>
+        <item>Smartphones</item>
+        <item>Notebooks</item>
+        <item>Livros</item>
+        <item>Brinquedos</item>
+        <item>Produtos para o cabelo</item>
+        <item>Perfumes</item>
+        <item>Artigos de armarinhos</item>
+        <item>Games</item>
+        <item>Maquiagem</item>
+        <item>Tapetes</item>
+        <item>Quadros para decoração</item>
+        <item>Bijuterias</item>
+        <item>Chaves</item>
+        <item>Documentos</item>
+        <item>Televisor</item>
+        <item>Marmita</item>
+        <item>Fast food</item>
+
+
+    </string-array>
+
+    <string-array name="quantidade_itens">
+        <item>01 Un</item>
+        <item>02 Un</item>
+        <item>03 Un</item>
+        <item>04 Un</item>
+        <item>05 Un</item>
+        <item>06 Un</item>
+        <item>07 Un</item>
+        <item>08 Un</item>
+        <item>09 Un</item>
+        <item>10 Un</item>
+    </string-array>
+
+    <string-array name="peso">
+        <item>até 1 Kg</item>
+        <item>até 5 kg</item>
+        <item>até 10 Kg</item>
+        <item>até 15 Kg</item>
+        <item>até 20 Kg</item>
+    </string-array>
+
+    <string-array name="meiosDeTransportes">
+        <item>Moto</item>
+    </string-array>
+
+
+    <string name="n_mero_do_pedido">NÚMERO DO PEDIDO</string>
+    <string name="valor">VALOR</string>
+    <string name="nmero_do_pedido">Número do Pedido</string>
+    <string name="valor_zero">R$ 0,00</string>
+    <string name="origem">ORIGEM</string>
+    <string name="destino">DESTINO</string>
+    <string name="distancia">DISTÂNCIA</string>
+    <string name="aceitar_ou_acompanhar">Aceitar ou Acompanhar</string>
+    <string name="trocar_de_mapa">Trocar de mapa</string>
+    <string name="nomeSobrenome">Nome e sobrenome</string>
+    <string name="localizacaoAtual">LOCALIZAÇÃO ATUAL</string>
+    <string name="finalizados">Finalizados</string>
+    <string name="pendentes">Pendentes</string>
+    <string name="ativos">Ativos</string>
+    <string name="carro">Carro</string>
+    <string name="moto">Moto</string>
+    <string name="a_pe">A pé</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="nome_da_empresa">Nome da empresa</string>
+    <string name="nome_fantasia">Nome fantasia</string>
+
+
+</resources>

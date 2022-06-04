@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/blue400_app_levv"
+    tools:context=".view.cadastro.usuario.lojista.CadastrarUsuarioLojistaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/editLojistaCnpj"
+            style="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/cnpj"
+            android:inputType="number"
+            android:maxLength="18"
+            android:minHeight="70dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/editLojistaNomeEmpresa"
+            style="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/nome_da_empresa"
+            android:layout_marginTop="8dp"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:minHeight="70dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/editLojistaNomeFantasia"
+            style="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/nome_fantasia"
+            android:inputType="textCapCharacters"
+            android:layout_marginTop="8dp"
+            android:maxLength="100"
+            android:minHeight="70dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="xl"
+            app:roundedCorners="true"
+            tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

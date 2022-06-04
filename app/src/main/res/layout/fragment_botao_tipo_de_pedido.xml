@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue400_app_levv"
+    tools:context=".view.pedido.BotaoTipoDePedidoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btnAtivos"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:drawableLeft="@drawable/icon_drawable_active"
+            android:backgroundTint="@color/blueGrey200_app_levv"
+            android:text="@string/ativos"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnFinalizados"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/icon_drawable_finished"
+            android:layout_marginStart="2dp"
+            android:backgroundTint="@color/blueGrey200_app_levv"
+            android:text="@string/finalizados"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnPendentes"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/blueGrey200_app_levv"
+            android:drawableLeft="@drawable/icon_drawable_pending"
+            android:text="@string/pendentes"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

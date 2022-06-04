@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue400_app_levv"
+    tools:context=".view.cadastro.usuario.transportador.CadastrarUsuarioEntregadorMeioTransporteFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.beardedhen.androidbootstrap.BootstrapEditText
+                                    android:id="@+id/tela_fragment_cadastro_entregador_veiculo_marca_edit"
+                                    style="10sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:height="48dp"
+                                    android:autofillHints="name"
+                                    android:ems="10"
+                                    android:hint="@string/marca"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="100"
+                                    android:minHeight="70dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    app:bootstrapBrand="info"
+                                    app:bootstrapSize="xl"
+                                    app:roundedCorners="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.beardedhen.androidbootstrap.BootstrapEditText
+                                    android:id="@+id/tela_fragment_cadastro_entregador_veiculo_modelo_edit"
+                                    style="10sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:height="48dp"
+                                    android:autofillHints="name"
+                                    android:ems="10"
+                                    android:hint="@string/modelo"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="100"
+                                    android:minWidth="@dimen/text_margin"
+                                    android:minHeight="70dp"
+                                    android:textSize="14sp"
+                                    app:bootstrapBrand="info"
+                                    app:bootstrapSize="xl"
+                                    app:roundedCorners="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.beardedhen.androidbootstrap.BootstrapEditText
+                                    android:id="@+id/tela_fragment_cadastro_entregador_veiculo_renavam_edit"
+                                    style="10sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:height="48dp"
+                                    android:autofillHints="name"
+                                    android:ems="10"
+                                    android:hint="@string/renavam"
+                                    android:inputType="number"
+                                    android:maxLength="11"
+                                    android:minWidth="@dimen/text_margin"
+                                    android:minHeight="70dp"
+                                    android:textSize="14sp"
+                                    app:bootstrapBrand="info"
+                                    app:bootstrapSize="xl"
+                                    app:roundedCorners="true" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.beardedhen.androidbootstrap.BootstrapEditText
+                                        android:id="@+id/tela_fragment_cadastro_entregador_veiculo_placa_edit"
+                                        style="10sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:height="48dp"
+                                        android:autofillHints="name"
+                                        android:ems="10"
+                                        android:hint="@string/placa"
+                                        android:inputType="textPersonName|textCapCharacters"
+                                        android:maxLength="8"
+                                        android:minWidth="@dimen/text_margin"
+                                        android:minHeight="70dp"
+                                        android:textSize="14sp"
+                                        app:bootstrapBrand="info"
+                                        app:bootstrapSize="xl"
+                                        app:roundedCorners="true" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/imageViewCrlv"
+                            android:layout_width="170dp"
+                            android:layout_height="225dp"
+                            android:layout_gravity="center"
+                            android:background="@color/blue200_app_levv"
+                            android:layout_margin="8dp" />
+
+                        <Button
+                            android:id="@+id/tela_fragment_cadastro_entregador_veiculo_crlv_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_button"
+                            android:drawableLeft="@drawable/icon_drawable_camera"
+                            android:gravity="center"
+                            android:text="@string/crlv"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:backgroundTint="@color/white"
+                            tools:layout_editor_absoluteX="300dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

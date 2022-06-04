@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue400_app_levv"
+    tools:context=".view.cadastro.celular.CadastrarCelularFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/editNomeCadastrarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:ems="10"
+                android:hint="@string/nomeSobrenome"
+                android:inputType="textAutoCorrect|textPersonName|text"
+                android:maxLength="100"
+                android:minHeight="70dp"
+                android:minEms="3"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="xl"
+                app:roundedCorners="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/editCelularCadastrarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints="phone"
+                android:ems="10"
+                android:hint="@string/numero_celular"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:minHeight="70dp"
+                android:textSize="18sp"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="xl"
+                app:roundedCorners="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/editEmailCadastrarFragment"
+                style="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="emailAddress"
+                android:ems="10"
+                android:layout_marginTop="8dp"
+                android:hint="@string/tela_cadastro_email_edit"
+                android:inputType="text"
+                android:maxLength="100"
+                android:minHeight="70dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="xl"
+                app:roundedCorners="true"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/editSenha1CadastrarFragment"
+                style="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:ems="10"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:maxLength="100"
+                android:minHeight="70dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="xl"
+                app:roundedCorners="true"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/editSenha2CadastrarFragment"
+                style="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:ems="10"
+                android:hint="Redigite a senha"
+                android:inputType="textPassword"
+                android:maxLength="100"
+                android:minHeight="70dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="xl"
+                app:roundedCorners="true"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
